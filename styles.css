@@ -10,10 +10,18 @@ body{
 
 .textarea{
     width: 50%;
+    max-width: 50%;
+    max-height: 30%;
+    margin: auto;
+    padding: 10px;
     background:rgb(151, 169, 222);
     color: black;
     border-radius: 0px 15px 0px 15px;
     border: none;
+}
+
+.textarea::-webkit-scrollbar{
+    display: none;
 }
 
 .textarea:hover{
@@ -23,6 +31,8 @@ body{
 
 
 #preview{
+    max-width: 1100px;
+    margin: auto;
     padding: 60px;
     text-align: left;
     background-color: rgb(151, 169, 222);
@@ -33,5 +43,12 @@ body{
 
 #preview:hover{
     box-shadow: 10px 10px 10px 10px royalblue;
+}
+
+img[src*="#cow"]{
+    width: 70%;
+    display: block;
+    margin: auto auto;
+    padding-top: 40px;
 }
 
